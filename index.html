@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rock_paper_scissor.css">
+</head>
+<body style="background-color: rgb(62, 0, 121);overflow: hidden;">
+    <span class="heading_1">Arcade</span>
+    <div id="score_container">
+    <div class="score"><span class="computer">computer</span><span class="you">you</span></div>
+    <div class="scores"><span class="computer_score" id="comp_score">0</span><span class="you_score" id="user_score">0</span></div>
+    </div>
+    <div class="choose_fate" id="choose_fate">choose your fate!</div>
+    <div class="playclass" id="playclass"><button id="play" class="play" onclick="play_start()">lets play!</button></div>
+    
+    <div id="button_container">
+        <button class="rock" id="rock" onclick="rock()">Rock</button>
+        <button class="paper" id="paper" onclick="paper()">Paper</button>
+        <button class="scissor" id="scissors" onclick="scissors()">Scissor</button>
+    </div>
+    <div class="hand_container" id="hand_container" >
+        <img id="left_fist" class ="left_fist" src="left_fist.png">
+        <img id="right_fist" class="right_fist" src="right_fist.png" alt="">
+    </div>
+    <script src="arcade.js"></script>
+</body>
+</html>
